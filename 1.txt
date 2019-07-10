@@ -1,0 +1,28 @@
+/**
+ * @Auther: wishm
+ * @Date: 2019/6/30 21:12
+ * @Description: io/nio io是流单向通道； nio 是双向通道，通道为 channel  装载为buffer(缓冲区)
+ *      核心参数：
+ *          Position 当前正在操作位置
+ *          Limit 可操作数据大小
+ *          Capacity 数据容量大小
+ *          Mark 上次position的位置
+ *
+ *   通过allocate(); 获取缓冲区
+ *   直接缓冲区：通过allocateDirect方法分配缓冲区，将缓冲区建立在物理内存中，可提高效率
+ *
+ *   通过flip(); 切换为读模式
+ *
+ * 根据数据类型的不同，提供了相应类型的缓冲区；排除Boolean
+ * ByteBuffer
+ * IntBuffer
+ * CharBuffer
+ * ShortBuffer
+ * LongBuffer
+ * DoubleBuffer
+ * FloatBuffer
+ *
+ * 数据操作：put(); get();  rewind();可重复读
+ *
+ *
+ */
